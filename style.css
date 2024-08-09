@@ -62,9 +62,30 @@
     margin-left: 4rem;
     gap: 1rem;
 }
-.content h1{
+.content h1::after{
+    content: "";
     color: #35b1f8;
-    
+    animation-name: x;
+    animation-duration: 2200ms;
+    animation-iteration-count: infinite;
+}
+@keyframes x{
+    0%{content: "W";}
+    7%{content: "We";}
+    14%{content: "Web";}
+    28%{content: "Web ";}
+    35%{content: "Web D";}
+    42%{content: "Web De";}
+    49%{content: "Web Dev";}
+    56%{content: "Web Deve";}
+    62%{content: "Web Devel";}
+    69%{content: "Web Develo";}
+    75%{content: "Web Develop";}
+    80%{content: "Web Develope";}
+    86%{content: "Web Developer";}
+    92%{content: "Web Developer.";}
+    96%{content: "Web Developer..";}
+    100%{content: "Web Developer...";}
 }
 .content h2{
     color: white;
